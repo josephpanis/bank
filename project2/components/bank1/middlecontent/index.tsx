@@ -59,23 +59,39 @@ export default function MiddleContent() {
         >
           <div className="flex flex-row gap-2">
             <div
+<<<<<<< Updated upstream
               className={`px-3 py-1 text-xs text-center font-bold items-center flex rounded-lg ${badgeColor}`}
             >
               {item.type}
             </div>
             <p className="truncate max-w-60 overflow-hidden whitespace-nowrap">
+=======
+              className={`px-2 py-1 text-xs text-center font-bold items-center flex rounded-lg ${badgeColor}`}
+            >
+              {item.type}
+            </div>
+            <p className="truncate max-w-40 text-sm overflow-hidden whitespace-nowrap">
+>>>>>>> Stashed changes
               {item.title}
             </p>
           </div>
           <div className="flex flex-row gap-2">
+<<<<<<< Updated upstream
             <p className="truncate max-w-[200px] overflow-hidden whitespace-nowrap text-zinc-400">
+=======
+            <p className="truncate max-w-[100px] text-sm overflow-hidden whitespace-nowrap text-zinc-400">
+>>>>>>> Stashed changes
               {item.date}
             </p>
             <Image
               src="/r-arrow.png"
               width={10}
               height={10}
+<<<<<<< Updated upstream
               className="w-8 h-5 object-contain"
+=======
+              className="w-5 h-5 object-contain"
+>>>>>>> Stashed changes
               alt="r-arrow"
             />
           </div>
@@ -85,10 +101,95 @@ export default function MiddleContent() {
   );
   return (
     <>
+<<<<<<< Updated upstream
       {" "}
       <div className=" col-span-3">
         <div className="grid grid-cols-2 gap-2">
           {/* Notices Section */}
+=======
+      <div className="block sm:hidden">
+        <Image
+          src="/placeholder1.png"
+          width={500}
+          height={300}
+          alt="placeholder"
+          className="w-full"
+        />
+        <div className="grid grid-cols-2 gap-2 mt-2">
+          <div className="col-span-1 flex flex-col gap-2">
+            <Image
+              src={"/sports.png"}
+              width={120}
+              height={100}
+              alt="placeholder"
+              className="object-contain w-full"
+            />
+            <Image
+              src={"/sports.png"}
+              width={120}
+              height={100}
+              alt="placeholder"
+              className="object-contain w-full"
+            />
+            <Image
+              src={"/sports.png"}
+              width={120}
+              height={100}
+              alt="placeholder"
+              className="object-contain w-full"
+            />
+          </div>
+          <div className="col-span-1 flex flex-col gap-2">
+            <Image
+              src={"/sports.png"}
+              width={120}
+              height={100}
+              alt="placeholder"
+              className="object-contain w-full"
+            />
+            <Image
+              src={"/sports.png"}
+              width={120}
+              height={100}
+              alt="placeholder"
+              className="object-contain w-full"
+            />
+            <Image
+              src={"/sports.png"}
+              width={120}
+              height={100}
+              alt="placeholder"
+              className="object-contain w-full"
+            />
+          </div>
+        </div>
+        <div className="flex flex-row justify-between navgradient p-3 text-lg font-bold rounded-lg items-center mt-3">
+          <p>공지사항</p>
+          <Image
+            src="/plus_icon.png"
+            width={10}
+            height={10}
+            className="w-5 h-5 object-contain"
+            alt="plus"
+          />
+        </div>
+        <CardList data={notices} badgeColor="bg-zinc-800 text-[#b8862f]" />{" "}
+        <div className="flex flex-row justify-between navgradient p-3 text-lg font-bold rounded-lg items-center mt-3">
+          <p>이벤트</p>
+          <Image
+            src="/plus_icon.png"
+            width={10}
+            height={10}
+            className="w-5 h-5 object-contain"
+            alt="plus"
+          />
+        </div>
+        <CardList data={events} badgeColor="bg-[#b8872b] text-black" />
+      </div>
+
+      <div className="col-span-3 hidden sm:block">
+        <div className="grid grid-cols-2 gap-2">
+>>>>>>> Stashed changes
           <div className="col-span-1">
             <Image
               src="/placeholder1.png"
@@ -131,6 +232,7 @@ export default function MiddleContent() {
             </div>
             <CardList data={events} badgeColor="bg-[#b8872b] text-black" />
           </div>
+<<<<<<< Updated upstream
         </div>
         <div className="flex flex-row items-center gap-2 w-full py-2">
           <h3 className="text-2xl font-black">Namdaemun Sports</h3>
@@ -167,11 +269,14 @@ export default function MiddleContent() {
             height={100}
             alt="placeholder"
           />{" "}
+=======
+>>>>>>> Stashed changes
         </div>{" "}
         <div className="flex flex-row items-center gap-2 w-full py-2">
           <h3 className="text-2xl font-black">Namdaemun Sports</h3>
           <hr className="hr flex-1" />
         </div>
+<<<<<<< Updated upstream
         <div className="flex flex-row justify-between mb-4 gap-2">
           <Image src={"/game.png"} width={200} height={100} alt="placeholder" />{" "}
           <Image src={"/game.png"} width={200} height={100} alt="placeholder" />{" "}
@@ -179,6 +284,40 @@ export default function MiddleContent() {
           <Image src={"/game.png"} width={200} height={100} alt="placeholder" />{" "}
           <Image src={"/game.png"} width={200} height={100} alt="placeholder" />{" "}
         </div>{" "}
+=======
+        <div className="flex flex-row justify-between mb-4 gap-2 w-full">
+          <Image
+            src={"/sports.png"}
+            width={120}
+            height={100}
+            alt="placeholder"
+          />
+          <Image
+            src={"/sports.png"}
+            width={120}
+            height={100}
+            alt="placeholder"
+          />
+          <Image
+            src={"/sports.png"}
+            width={120}
+            height={100}
+            alt="placeholder"
+          />
+          <Image
+            src={"/sports.png"}
+            width={120}
+            height={100}
+            alt="placeholder"
+          />
+          <Image
+            src={"/sports.png"}
+            width={120}
+            height={100}
+            alt="placeholder"
+          />
+        </div>
+>>>>>>> Stashed changes
       </div>
     </>
   );
