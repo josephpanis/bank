@@ -10,13 +10,9 @@ export default function Home() {
     <>
       <Header />
       <div className="grid grid-cols-14 p-2 gap-2">
-<<<<<<< Updated upstream
-        <LeftSideBar />
-=======
         <div className="hidden sm:block">
           <LeftSideBar />
         </div>
->>>>>>> Stashed changes
 
         <div className="col-span-9 grid grid-cols-2 gap-1">
           <MainContent />
