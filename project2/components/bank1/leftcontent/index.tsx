@@ -1,18 +1,5 @@
 import Image from "next/image";
 import Tabs from "@/components/bank1/tabs";
-<<<<<<< Updated upstream
-
-export default function LeftContent() {
-  const primaryButtons = ["입금신청", "출금신청"];
-  const categoryButtons = [
-    ["해외형", "국내형", "스페셜"],
-    ["인플레이", "실시간", "미니게임"],
-    ["벳365", "토큰게임", "카지노"],
-    ["슬롯", "경기결과", "베팅내역"],
-    ["공지사항", "이벤트", "개인정산"],
-    ["쪽지함", "고객센터", "마이페이지"],
-    ["출석체크", "입금신청", "출금신청"],
-=======
 import Link from "next/link";
 
 export default function LeftContent() {
@@ -57,7 +44,6 @@ export default function LeftContent() {
       { label: "입금신청", path: "/navigation/charge" },
       { label: "출금신청", path: "/navigation/exchange" },
     ],
->>>>>>> Stashed changes
   ];
 
   const leagues = [
@@ -74,26 +60,6 @@ export default function LeftContent() {
   ];
 
   return (
-<<<<<<< Updated upstream
-    <div className="bg-zinc-900 col-span-1">
-      <div className="flex flex-row gap-2 pb-2">
-        {primaryButtons.map((label, index) => (
-          <button key={index} className="btn-gold-gradient">
-            {label}
-          </button>
-        ))}
-      </div>
-
-      {categoryButtons.map((group, idx) => (
-        <div
-          key={idx}
-          className="flex flex-row gap-2 justify-between mb-2 flex-nowrap"
-        >
-          {group.map((label, index) => (
-            <button key={index} className="btn-gold-outline">
-              {label}
-            </button>
-=======
     <div className="">
       {/* Primary Buttons */}
       <div className="flex flex-row gap-2 pb-2">
@@ -114,17 +80,12 @@ export default function LeftContent() {
             <Link key={index} href={path} className="w-full">
               <button className="btn-gold-outline w-full">{label}</button>
             </Link>
->>>>>>> Stashed changes
           ))}
         </div>
       ))}
 
-<<<<<<< Updated upstream
-      <div className="bg-[#222222] p-2 flex flex-row mb-2">
-=======
       {/* Search Bar */}
       <div className="bg-[#222222] p-2 flex flex-row my-2">
->>>>>>> Stashed changes
         <input
           type="text"
           className="bg-[#313131] flex flex-1 text-sm font-bold p-2"
@@ -142,28 +103,6 @@ export default function LeftContent() {
       </div>
 
       <Tabs />
-<<<<<<< Updated upstream
-
-      <div className="flex flex-col gap-1 pt-3">
-        {leagues.map((league, index) => (
-          <div
-            key={index}
-            className="flex flex-row gap-6 justify-between p-4 bg-[#222222] text-white py-2"
-          >
-            <div className="flex flex-row gap-4">
-              <Image
-                src={`/icon_sidebar/${league.icon}`}
-                width={20}
-                height={20}
-                alt={league.name}
-              />
-              <div>{league.name}</div>
-            </div>
-          </div>
-        ))}
-      </div>
-=======
->>>>>>> Stashed changes
     </div>
   );
 }
