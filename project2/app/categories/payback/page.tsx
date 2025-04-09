@@ -46,10 +46,10 @@ export default function Home() {
   return (
     <>
       <h1 className="text-2xl text-amber-300 pb-2">개인정산 (페이백)</h1>
-      <h2 className="bg-zinc-800 p-2 text-left text-lg font-semibold">
+      <h2 className="bg-zinc-800 p-2 text-left text-lg font-semibold rounded-t-lg">
         충전방법
       </h2>
-      <div className="bg-zinc-900/80 p-2 rounded-lg text-white w-full ">
+      <div className="bg-zinc-900/80 p-2 rounded-b-lg text-white w-full ">
         <div className="space-y-3 mt-2">
           {instructions.map((text, index) => (
             <div key={index} className="flex items-start gap-2">
@@ -58,10 +58,10 @@ export default function Home() {
           ))}
         </div>
       </div>{" "}
-      <div className="bg-zinc-800 p-2 text-left text-white text-lg font-semibold mt-2">
+      <div className="bg-zinc-800 p-2 text-left text-white text-lg rounded-t-lg font-semibold mt-2">
         페이백 정산
       </div>{" "}
-      <div className="bg-zinc-900/80 p-2 rounded-lg text-white w-full">
+      <div className="bg-zinc-900/80 p-2 text-white rounded-b-lg w-full">
         <div className="flex flex-row border-b border-neutral-800 py-2">
           <p className="w-32">지급 예정 금액</p>
           <p className="">0 원</p>

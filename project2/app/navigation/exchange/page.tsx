@@ -108,7 +108,7 @@ export default function Home() {
 
       {/* Button */}
       <div className="flex justify-center p-2">
-        <button className="border border-yellow-400 text-yellow-400 px-16 py-2 hover:text-black hover:bg-yellow-400">
+        <button className="border border-yellow-400 text-yellow-400 px-4 py-2 hover:text-black hover:bg-yellow-400">
           입금신청하기
         </button>
       </div>

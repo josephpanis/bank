@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function LeftContent() {
   const primaryButtons = [
     { label: "입금신청", path: "/navigation/charge" },
-    { label: "출금신청", path: "/exchange" },
+    { label: "출금신청", path: "navigation/exchange" },
   ];
 
   const categoryButtons = [

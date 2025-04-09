@@ -155,11 +155,11 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex flex-row w-full justify-center p-2">
-          <button className="border border-yellow-400 text-yellow-400 px-16 py-2 hover:text-black hover:bg-yellow-400">
+        <div className="flex flex-row w-full justify-center p-2 gap-2">
+          <button className="border border-yellow-400 text-yellow-400 rounded-lg px-6 py-2 hover:text-black hover:bg-yellow-400">
             입금신청하기
           </button>
-          <button className="bg-zinc-700 px-16 py-2 hover:bg-zinc-500">
+          <button className="bg-zinc-700 px-6 py-2 hover:bg-zinc-500 rounded-lg">
             입금신청하기
           </button>
         </div>{" "}
@@ -167,8 +167,8 @@ export default function Home() {
         <div className="flex flex-row gap-4 bg-zinc-900/80 p-2 rounded-t-lg">
           <p className="text-yellow-400">30건 내역만 조회가능합니다</p>
         </div>
-        <table className="w-full rounded-b-lg">
-          <thead className="bg-zinc-800">
+        <table className="w-full rounded-b-lg overflow-x-auto">
+          <thead className="bg-zinc-800 min-w-[380px]">
             <tr>
               <th className="p-2 align-middle text-center">날짜</th>
               <th className="p-2">요청금액(원)</th>

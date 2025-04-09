@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <div className="col-span-8 gap-1">
         <h1 className="text-2xl text-yellow-300">이벤트</h1>
-        <div className="grid sm:grid-cols-3 grid-cols-1 gap-2">
+        <div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-3 gap-2">
           <div className="flex flex-col bg-zinc-900/90 ">
             <Image
               src={"/notice_image/notice_image1.png"}

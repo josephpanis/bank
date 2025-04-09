@@ -11,7 +11,7 @@ export default function Home() {
           alt="auto"
           className="object-fill w-full h-auto"
         />
-        <div className="grid sm:grid-cols-6 grid-cols-4 gap-2 pt-2">
+        <div className="grid sm:grid-cols-6 grid-cols-3 gap-2 pt-2">
           <div className="flex flex-col bg-zinc-900/90 ">
             <Image
               src={"/slot/slot01.png"}
