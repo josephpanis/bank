@@ -1,6 +1,5 @@
 "use client";
 import { useState } from "react";
-import Image from "next/image";
 import DividendsBonus from "@/components/reusable/dividendsBonus/page";
 import MatchCard from "@/components/reusable/matchcard/page";
 const sports = [
@@ -28,8 +27,6 @@ const sports = [
   { id: "벳365", name: "벳365", icon: "/sports_nav/icon_sports09.png" },
 ];
 
-import RightSidebar from "@/components/bank1/rightcontent";
-
 export default function Home() {
   const [selectedSport, setSelectedSport] = useState("스포츠(해외형)");
   return (
@@ -45,7 +42,7 @@ export default function Home() {
             onClick={() => setSelectedSport(sport.id)}
           >
             <button className="flex flex-col items-center justify-center space-y-1 focus:outline-none">
-              <p className="m-0">{sport.name}</p>
+              <p className="m-0 text-sm p-1">{sport.name}</p>
               <p className="text-xs text-gray-400">(123)</p>
             </button>
           </div>

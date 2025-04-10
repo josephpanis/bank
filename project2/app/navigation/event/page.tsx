@@ -1,9 +1,7 @@
 "use client";
-import { useState } from "react";
+
 import Image from "next/image";
-import Navbar from "@/components/bank1/navbar";
-import LeftContent from "@/components/bank1/leftcontent";
-import RightSidebar from "@/components/bank1/rightcontent";
+
 
 export default function Home() {
   return (

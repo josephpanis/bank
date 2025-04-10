@@ -2,7 +2,6 @@
 import { useState } from "react";
 import Image from "next/image";
 import DividendsBonus from "@/components/reusable/dividendsBonus/page";
-import LeagueCard from "@/components/reusable/leaguecard/page";
 const sports = [
   { id: "로투스", name: "로투스", icon: "/icon_minigame/icon_01.png" },
   { id: "크라운", name: "크라운", icon: "/icon_minigame/icon_02.png" },
